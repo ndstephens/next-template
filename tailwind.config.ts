@@ -4,6 +4,8 @@ import colors from 'tailwindcss/colors';
 import plugin from 'tailwindcss/plugin';
 // import { addTailwindColorVariables } from './lib/utils/tailwindColorVars';
 
+const { transparent, current, white, black } = colors;
+
 const config: Config = {
   content: [
     './app/**/*.{js,ts,jsx,tsx,mdx}',
@@ -15,7 +17,11 @@ const config: Config = {
   },
   theme: {
     colors: {
-      ...colors,
+      // ...colors,
+      transparent,
+      current,
+      white,
+      black,
       gray: colors.slate,
     },
     screens: {
@@ -31,15 +37,6 @@ const config: Config = {
   plugins: [
     // addTailwindColorVariables,
     plugin(function ({ addUtilities, addVariant }) {
-      // addVariant('hocus', ['&:hover', '&:focus']);
-      // addVariant('group-hocus', [
-      //   ':merge(.group):hover &',
-      //   ':merge(.group):focus &',
-      // ]);
-      // addVariant('peer-hocus', [
-      //   ':merge(.peer):hover ~ &',
-      //   ':merge(.peer):focus ~ &',
-      // ]);
       addVariant('hocusv', ['&:hover', '&:focus-visible']);
       addVariant('group-hocusv', [
         ':merge(.group):hover &',
