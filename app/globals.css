@@ -3,6 +3,7 @@
 @tailwind utilities;
 
 @layer base {
+  /** RESET */
   :where(*) {
     @apply antialiased;
   }
@@ -13,7 +14,7 @@
     @apply select-none;
   }
 
-  /** OVERRIDES TAILWIND PREFLIGHT */
+  /** TAILWIND PREFLIGHT OVERRIDES */
   button,
   button * {
     @apply leading-none;
@@ -23,5 +24,16 @@
   select {
     text-transform: inherit;
     letter-spacing: inherit;
+  }
+
+  /** CUSTOM */
+  * {
+    @apply focus:outline-none focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-current;
+  }
+  body {
+    @apply bg-gray-800 text-xl text-gray-200;
+  }
+  :is(h1, h2, h3, h4, h5, h6) {
+    @apply text-gray-50;
   }
 }
