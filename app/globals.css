@@ -9,25 +9,24 @@
   }
 
   /** TAILWIND PREFLIGHT OVERRIDES */
-  button,
-  button * {
+  :where(button, button *) {
     @apply leading-none;
   }
 
-  button,
+  /* button,
   select {
     text-transform: inherit;
     letter-spacing: inherit;
-  }
+  } */
 
   /** CUSTOM */
   * {
     @apply focus:outline-none focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-current;
   }
   body {
-    @apply bg-gray-800 text-xl text-gray-200 selection:bg-gray-300 selection:text-gray-900;
+    @apply bg-gray-800 text-gray-200 selection:bg-gray-300 selection:text-gray-900;
   }
-  :is(h1, h2, h3, h4, h5, h6) {
+  :where(h1, h2, h3, h4, h5, h6) {
     @apply text-gray-50;
   }
 }
