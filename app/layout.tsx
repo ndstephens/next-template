@@ -26,11 +26,11 @@ export const metadata: Metadata = {
 
 export default function RootLayout({ children }: PropsWithChildren) {
   return (
-    <html lang="en" className="h-full">
-      <body
-        className={`${sans.variable} flex min-h-full flex-col bg-gray-800 font-sans text-gray-200 antialiased selection:bg-gray-300 selection:text-gray-900`}
-      >
-        {children}
+    <html lang="en" className={`${sans.variable}`}>
+      <body className="flex min-h-dvh flex-col bg-gray-800 font-sans text-gray-200 antialiased selection:bg-gray-300 selection:text-gray-900">
+        <header>Header</header>
+        <main className="grow">{children}</main>
+        <footer>Footer</footer>
       </body>
     </html>
   );

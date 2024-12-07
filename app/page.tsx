@@ -5,5 +5,5 @@ export const metadata: Metadata = {
 };
 
 export default function HomePage() {
-  return <main className="flex grow flex-col">Hello world!</main>;
+  return <section>Hello world!</section>;
 }

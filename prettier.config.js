@@ -1,8 +1,4 @@
-/**
- * @see https://prettier.io/docs/en/configuration.html
- * @type {import("prettier").Config}
- */
-const config = {
+module.exports = {
   singleQuote: true,
   // 'prettier-plugin-tailwindcss' must be loaded last if you add others to this list
   plugins: [
@@ -15,5 +11,3 @@ const config = {
   importOrderSortSpecifiers: true,
   importOrderCaseInsensitive: true,
 };
-
-export default config;
