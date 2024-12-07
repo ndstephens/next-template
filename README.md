@@ -8,7 +8,7 @@ First:
 
 ```bash
 pnpm install
-pnpm run prepare
+pnpm prepare
 ```
 
 Then run the development server:
