@@ -4,7 +4,14 @@ This is a [Next.js](https://nextjs.org/) project template bootstrapped with [`cr
 
 ## Getting Started
 
-First, run the development server:
+First:
+
+```bash
+pnpm install
+pnpm run prepare
+```
+
+Then run the development server:
 
 ```bash
 pnpm dev
@@ -14,7 +21,7 @@ Open [http://localhost:3000](http://localhost:3000) with your browser to see the
 
 ---
 
-## Things to Update When Using Template
+## Update and Configure
 
 - Project `name` and dependencies in [package.json](package.json)
 - Emoji used for favicon in [app/icon.tsx](app/icon.tsx)

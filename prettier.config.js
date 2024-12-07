@@ -6,7 +6,7 @@ module.exports = {
     'prettier-plugin-tailwindcss',
   ],
   tailwindFunctions: ['clsx', 'cva', 'tw'],
-  importOrder: ['^@/components/(.*)$', '^@/lib/(.*)$', '^@/**/(.*)$', '^[./]'],
+  importOrder: ['^@/components/(.*)$', '^@/lib/(.*)$', '^@/(.*)$', '^[./]'],
   importOrderSeparation: true,
   importOrderSortSpecifiers: true,
   importOrderCaseInsensitive: true,

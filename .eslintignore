@@ -1,2 +1,1 @@
-.next
-node_modules
+# In addition to any patterns in the .eslintignore file, `node_modules`, dot-files, and dot-folders and their contents are ignored.
