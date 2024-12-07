@@ -4,7 +4,7 @@ import { type PropsWithChildren } from 'react';
 
 import './main.css';
 
-const sans = Inter({ subsets: ['latin'], variable: '--font-sans' });
+const sans = Inter({ subsets: ['latin'], variable: '--custom-sans' });
 
 export const metadata: Metadata = {
   title: {
