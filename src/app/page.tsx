@@ -5,5 +5,9 @@ export const metadata: Metadata = {
 };
 
 export default function HomePage() {
-  return <section>Hello world!</section>;
+  return (
+    <section>
+      <h1>Next Template</h1>
+    </section>
+  );
 }
