@@ -9,11 +9,12 @@
     "dev": "next dev --turbopack",
     "build": "next build",
     "start": "next start",
+    "prod": "next build && next start",
     "lint": "next lint",
     "lint:fix": "next lint . --ext js,jsx,ts,tsx,md,mdx --fix",
     "format": "prettier -wu .",
     "prepare": "husky",
-    "tsc": "tsc"
+    "tsc": "tsc --noEmit"
   },
   "dependencies": {
     "next": "15.1.3",
