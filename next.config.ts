@@ -2,6 +2,7 @@ import type { NextConfig } from 'next';
 
 const nextConfig: NextConfig = {
   // experimental: {
+  //   typedRoutes: true,
   //   staleTimes: {
   //     dynamic: 30,
   //   },
@@ -13,9 +14,6 @@ const nextConfig: NextConfig = {
     // },
   },
   poweredByHeader: false,
-  // experimental: {
-  //   typedRoutes: true,
-  // },
 };
 
 export default nextConfig;

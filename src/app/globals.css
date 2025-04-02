@@ -1,0 +1,40 @@
+@import 'tailwindcss';
+
+@theme inline {
+  --font-sans: var(--custom-sans), ui-sans-serif, system-ui, sans-serif;
+
+  --breakpoint-xs: 30rem; /* 480px */
+}
+
+@layer base {
+  * {
+    @apply focus:outline-none focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-current;
+  }
+
+  body {
+    @apply bg-gray-900 text-gray-200 selection:bg-gray-300 selection:text-gray-900;
+  }
+
+  :where(h1, h2, h3, h4, h5, h6) {
+    @apply text-gray-50;
+  }
+
+  :where(button, nav) {
+    @apply select-none;
+  }
+
+  :where(button) {
+    @apply hover:cursor-pointer;
+  }
+
+  :where(button, button *) {
+    @apply leading-none;
+  }
+}
+
+@layer components {
+}
+
+@utility content-auto {
+  content-visibility: auto;
+}

@@ -7,13 +7,15 @@ module.exports = {
   ],
   tailwindFunctions: ['clsx', 'cva', 'tw'],
   importOrder: [
+    '^@/actions/(.*)$',
     '^@/components/(.*)$',
     '^@/features/(.*)$',
+    '^@/hooks/(.*)$',
     '^@/lib/(.*)$',
     '^@/(.*)$',
     '^[./]',
   ],
-  importOrderSeparation: true,
+  importOrderSeparation: false,
   importOrderSortSpecifiers: true,
   importOrderCaseInsensitive: true,
 };

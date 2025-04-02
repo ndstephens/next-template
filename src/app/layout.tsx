@@ -1,8 +1,7 @@
 import { type Metadata } from 'next';
 import { Inter } from 'next/font/google';
 import { type PropsWithChildren } from 'react';
-
-import './main.css';
+import './globals.css';
 
 const sans = Inter({ subsets: ['latin'], variable: '--custom-sans' });
 
@@ -27,7 +26,7 @@ export const metadata: Metadata = {
 export default function RootLayout({ children }: PropsWithChildren) {
   return (
     <html lang="en" className={`${sans.variable}`}>
-      <body className="flex min-h-dvh flex-col bg-gray-800 font-sans text-gray-200 antialiased selection:bg-gray-300 selection:text-gray-900">
+      <body className="flex min-h-dvh flex-col font-sans antialiased">
         <header>Header</header>
         <main className="grow">{children}</main>
         <footer>Footer</footer>
